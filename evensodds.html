@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/css/style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evens and odds</title>
+</head>
+<body>
+    <header>
+        <h1 class="headertag"> Welcome to the evens and odds numbers generators</h1>
+    </header>
+    <main>
+        <section>
+            <h1 class="headertag"> Type a number and we will generate a list with the evens and the odd numbers from one to that given number :</h1>
+        </section>
+        <form action="/evensodds.html" method="POST" id="flexcontainer">
+            <input type="text" name="number" placeholder="Insert your number">
+            <button type="submit"> Verify </button>
+        </form>
+        {% if display %}
+        <p id="resultdisplay"> <strong> {{ display }}</strong></p>
+        {% endif %}
+    
+</body>
+</html>
