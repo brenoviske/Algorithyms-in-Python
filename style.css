@@ -1,0 +1,134 @@
+body {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.headertag {
+
+    font-family: system-ui;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+input{
+
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    box-shadow: 1px 1px 10px black;
+
+}
+
+#checkbutton{
+
+    background-color: black;
+    color: white;
+    font-family: system-ui;
+    font-size: 25px;
+    font-weight: lighter;
+    box-shadow: 1px 1px 10px black;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+#maincontent {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+#resultdisplay {
+
+    text-align: center;
+    font-family: system-ui;
+    font-size: 20px;
+
+}
+
+footer{
+
+    display: block;
+    text-align: center;
+
+}
+
+#nextpagebutton{
+
+    color: white;
+   background-color: black;
+   border: none;
+   padding: 10px;
+   font-family: system-ui;
+   font-size: 20px;
+   font-weight: lighter;
+   border-radius: 10px;
+   box-shadow: 1px 1px 10px black;
+   cursor: pointer;
+
+}
+
+
+/* Para dispostivios pequenos */
+
+@media screen and (max-width: 370px) {
+
+    .headertag{
+        font-family: system-ui;
+        font-size: 20px;
+    }
+
+    #maincontent{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+        
+    }
+
+    #checkbutton{
+        font-size: 15px;
+    }
+
+}
+
+/* Para Iphones e dispositivos com tamanhos similares */
+
+@media screen and ( min-width: 370px) and ( max-width: 430px){
+    .headertag {
+        text-align: center;
+    }
+
+}
+
+
+/* Para dispositivos de médio porte */
+
+@media screen and ( min-width: 430px) and (max-width: 1080px){
+    .headertag{
+        font-size: 50px;
+    }
+
+    input {
+        font-size: 50px;
+    }
+
+    #checkbutton {
+        font-size: 50px;
+    }
+    
+    #nextpagebutton {
+        font-size: 50px;
+    }
+}
